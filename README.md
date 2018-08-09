@@ -78,7 +78,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 
 where your data is then passed into `onSubmit(data)`.
 
-## websocket: command and query
+## websocket: command and query (and "event")
 
 I created a `command` and `query` for websockets for convention sake, but it works perfectly fine if you just use `command`.
 
@@ -125,4 +125,4 @@ socket.on(`event`, toAction(dispatch))
 
 it expects the data object received  to include a `type` which will then be converted constant-case, and then dispatched as an action.
 
-If a `CommandRejected` or `QueryRejected` type is received a further action of `_FAILURE` type will also be emitted (based on the constant-case of the `payload.type`).
+If a `CommandRejected` or `QueryRejected` type is received a further action of `_FAILURE` type will also be emitted (based on the constant-case of the `payload.type` -- idealy that would be the type of the corresponding command or query).
