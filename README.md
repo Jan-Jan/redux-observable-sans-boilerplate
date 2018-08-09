@@ -1,12 +1,15 @@
 
 # redux-observable-sans-boilerplate
 
-Redux is awesome. But, boilerplate is a code smell. This library allows you to use redux with zero boilerplate:
+Redux is awesome. But, boilerplate is a code smell.
+This library allows you to use redux with zero boilerplate:
 
 * ZERO action definitions
-* ONLY 1 dispatch (per API targeted)
+* ONLY 1 dispatch (per http API targeted)
+* ONLY 1 epic (per http API targeted)
 
-instead you should **just be coding business logic**.
+(and similar for websockets).
+Instead of boilerplate, you should **just be coding business logic**.
 
 
 # install
@@ -111,9 +114,10 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     onSubmit: ownProps.command('updateUser'),
 })
 ```
+
 where your data is then passed into `onSubmit(data)`.
 
-To handle events from backend you can use
+Bonus: to handle events from backend you can use
 
 ```javascript
 socket.on(`event`, toAction(dispatch))
