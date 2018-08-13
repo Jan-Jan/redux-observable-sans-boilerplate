@@ -4,9 +4,9 @@
 Redux is awesome. But, boilerplate is a code smell.
 This library allows you to use redux with zero boilerplate:
 
+* ZERO constant definitions
 * ZERO action definitions
-* ONLY 1 dispatch (per http API targeted)
-* ONLY 1 epic (per http API targeted)
+* ONLY 1 dispatch definition (per http API targeted)
 
 (and similar for websockets).
 Instead of boilerplate, you should **just be coding business logic**.
