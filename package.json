@@ -1,6 +1,6 @@
 {
   "name": "redux-observable-sans",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Use redux without any boilerplate",
   "main": "lib/index.js",
   "scripts": {
