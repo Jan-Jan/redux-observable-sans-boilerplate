@@ -2,7 +2,7 @@
   "name": "redux-observable-sans",
   "version": "0.0.1",
   "description": "Use redux without any boilerplate",
-  "main": "example/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest"
   },
