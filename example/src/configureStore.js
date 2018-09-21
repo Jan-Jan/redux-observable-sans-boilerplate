@@ -12,18 +12,11 @@ export default function configureStore(history) {
   const store = createStore(
     connectRouter(history)(rootReducer), // new root reducer with router state
     //initialState,
-    applyMiddleware(
-        epicMiddleware,
-        routerMiddleware(history)
-    )
-    /*
     composeEnhancers(
-      applyMiddleware(
-        epicMiddleware,
-        routerMiddleware(history)
-      )
+        applyMiddleware(
+            epicMiddleware
+        )
     )
-    */
   )
 
   epicMiddleware.run(rootEpic)
