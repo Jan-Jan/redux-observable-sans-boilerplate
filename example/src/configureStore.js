@@ -6,7 +6,7 @@ import rootEpic from './epics'
 
 const epicMiddleware = createEpicMiddleware()
 
-export default function configureStore (history) {
+export default function configureStore () {
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
   const store = createStore(
     rootReducer, // new root reducer with router state
