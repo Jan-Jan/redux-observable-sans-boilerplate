@@ -8,8 +8,9 @@ module.exports = {
     extends: 'standard',
     parserOptions: {
         ecmaFeatures: {
-          experimentalObjectRestSpread: true
-        }
+          jsx: true
+        },
+        ecmaVersion: 2018
       },
     rules: {
         'brace-style': [1, 'stroustrup', { allowSingleLine: true }],
@@ -21,7 +22,7 @@ module.exports = {
     overrides: [
         {
             files: [
-                'lib/**/*-spec.js'
+                'src/**/*-spec.js'
             ],
             env: {
                 jest: true // now **/*.test.js files' env has both es6 *and* jest
