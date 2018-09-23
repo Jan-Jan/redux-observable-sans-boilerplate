@@ -20,6 +20,8 @@ npm i --save redux-observable-sans-boilerplate
 
 # use
 
+See `example` directory for a simple example of how to use library
+
 ## http (json)
 
 ```javascript
