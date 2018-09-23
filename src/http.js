@@ -38,12 +38,12 @@ export const rpcSuccess = type => payload =>
 
 export const rpcFailure = (type, url, httpType) => response =>
   ([
-    { 
-      type: `${type}_FAILURE`, 
+    {
+      type: `${type}_FAILURE`,
       payload: {
         error: true,
         message: response.message,
-        ...((response && response.xhr) ? response.xhr.response : response.body)
+        ...((response && response.xhr) ? response.xhr.response : response.body),
       },
     },
     {
@@ -52,7 +52,7 @@ export const rpcFailure = (type, url, httpType) => response =>
         url,
         error: true,
         message: response.message || (response.body && response.body.message),
-        ...response
+        ...response,
       },
     },
   ])

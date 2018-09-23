@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { connect, Provider } from 'react-redux'
-import { httpAction } from './sans'
+import { httpAction } from 'redux-observable-sans'
 
 import App from './App'
 import configureStore from './configureStore'

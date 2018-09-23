@@ -32,12 +32,14 @@ const config = {
         commonjs: 'redux',
         amd: 'redux',
       },
+      /*
       reduxObservable: {
         root: 'ReduxObservable',
         commonjs2: 'reduxObservable',
         commonjs: 'reduxObservable',
         amd: 'reduxObservable',
       },
+      */
     },
   ],
   plugins: [
